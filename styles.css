@@ -456,20 +456,6 @@ pre {
     color: #dcdcaa;
 }
 
-.string {
-    color: #ce9178;
-}
-
-.comment {
-    color: #6a9955;
-}
-
-/* About Section */
-.about-section {
-    background: var(--bg-dark);
-    text-align: center;
-}
-
 .about-content {
     max-width: 800px;
     margin: 0 auto;
