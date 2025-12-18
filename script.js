@@ -37,25 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Form Submission Handling
-    const form = document.getElementById('leadForm');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = form.querySelector('button[type="submit"]');
-            const originalText = btn.innerText;
-            
-            btn.innerText = 'Sending...';
-            btn.disabled = true;
+    // We are using FormSubmit.co (native HTML form submission), so no JS interception needed.
+    // The form will redirect to a Thank You page automatically.
 
-            // Simulate API call
-            setTimeout(() => {
-                alert('Thank you! We have received your message and will contact you shortly.');
-                form.reset();
-                btn.innerText = originalText;
-                btn.disabled = false;
-            }, 1500);
-        });
-    }
 
     // Intersection Observer for Fade-in Animations
     const observerOptions = {
